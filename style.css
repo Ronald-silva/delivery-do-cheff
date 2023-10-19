@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(img/restautant-fundo.jpg);
+}
+header {
+    background-color: red;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+header #logo{
+    width: 5rem;
+    margin-right: 1rem;
+}
+.slide{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.slide-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+.slide-content input{
+    display: none;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3,
+#radio4:checked ~ .nav-auto .auto-btn4,
+#radio5:checked ~ .nav-auto .auto-btn5,
+#radio6:checked ~ .nav-auto .auto-btn6,
+#radio7:checked ~ .nav-auto .auto-btn7,
+#radio8:checked ~ .nav-auto .auto-btn8{
+    background-color: red;
+}
+#radio1:checked ~ .primeiro{
+    margin-left: 0;
+}
+#radio2:checked ~ .primeiro{
+    margin-left: -10%;
+}
+#radio3:checked ~ .primeiro{
+    margin-left: -20%;
+}
+#radio4:checked ~ .primeiro{
+    margin-left: -25%;
+}
+#radio5:checked ~ .primeiro{
+    margin-left: -30%;
+}
+#radio6:checked ~ .primeiro{
+    margin-left: -35%;
+}
+#radio7:checked ~ .primeiro{
+    margin-left: -40%;
+}
+#radio8:checked ~ .primeiro{
+    margin-left: -48%;
+}
+.slide-box{
+    width: 10.5%;
+    height: auto;
+    position:relative;
+    text-align: center;
+}
+.slide-box img{
+    width: 100%;
+    height: 400px;
+    border: solid 2px black;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 41%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: solid 1px red;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+
+}
+.nav-manual .manual-btn:hover{
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slide-box img{
+        width: 100%;
+        height: 180px;
+
+    }
+}
+/* cardapio */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    
+}
+h1 {
+    margin: 0;
+}
+
+.menu {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 20px;
+    background-color: #fff;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.menu h1{
+    text-align: center;
+    background-color: red;
+    border-radius: 20px;
+    
+}
+.menu-item {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+footer{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: red;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
